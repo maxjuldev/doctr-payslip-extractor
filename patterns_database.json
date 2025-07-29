@@ -1,0 +1,170 @@
+[
+  {
+    "field_name": "company_name",
+    "pattern": "(?:^|\\n)([A-ZÀ-Ÿ\\s&]+)\\n[0-9]+",
+    "priority": 1,
+    "success_rate": 0.8,
+    "usage_count": 0,
+    "last_used": ""
+  },
+  {
+    "field_name": "siret",
+    "pattern": "Siret\\s*:?\\s*([0-9]+)",
+    "priority": 1,
+    "success_rate": 0.9,
+    "usage_count": 0,
+    "last_used": ""
+  },
+  {
+    "field_name": "naf_code",
+    "pattern": "Code\\s*Naf\\s*:?\\s*([0-9A-Z]+)",
+    "priority": 1,
+    "success_rate": 0.9,
+    "usage_count": 0,
+    "last_used": ""
+  },
+  {
+    "field_name": "full_name",
+    "pattern": "Abdelaziz\\ LOUNIS",
+    "priority": 2,
+    "success_rate": 1.0,
+    "usage_count": 4,
+    "last_used": "2025-07-29T20:04:06.717107"
+  },
+  {
+    "field_name": "matricule",
+    "pattern": "Matricule\\s*:?\\s*([0-9]+)",
+    "priority": 1,
+    "success_rate": 0.9,
+    "usage_count": 0,
+    "last_used": ""
+  },
+  {
+    "field_name": "social_security",
+    "pattern": "No\\s*SS\\s*:?\\s*([0-9]+)",
+    "priority": 1,
+    "success_rate": 0.9,
+    "usage_count": 0,
+    "last_used": ""
+  },
+  {
+    "field_name": "gross_salary",
+    "pattern": "Salaire\\s+brut\\s+([0-9\\s,]+\\.?[0-9]*)",
+    "priority": 1,
+    "success_rate": 0.8,
+    "usage_count": 2,
+    "last_used": ""
+  },
+  {
+    "field_name": "net_paid",
+    "pattern": "Net\\s+payé?\\s+([0-9\\s,]+\\.?[0-9]*)",
+    "priority": 1,
+    "success_rate": 0.8,
+    "usage_count": 0,
+    "last_used": ""
+  },
+  {
+    "field_name": "start_date",
+    "pattern": "([0-9\\s,]+\\.?[0-9]*11/07/2023[0-9\\s,]*\\.?[0-9]*)",
+    "priority": 2,
+    "success_rate": 1.0,
+    "usage_count": 3,
+    "last_used": "2025-07-29T20:05:13.331821"
+  },
+  {
+    "field_name": "payment_date",
+    "pattern": "([0-9\\s,]+\\.?[0-9]*30/11/2023[0-9\\s,]*\\.?[0-9]*)",
+    "priority": 2,
+    "success_rate": 1.0,
+    "usage_count": 1,
+    "last_used": "2025-07-29T20:11:22.735591"
+  },
+  {
+    "field_name": "address_line1",
+    "pattern": "([0-9\\s,]+\\.?[0-9]*242\\ Boulevard\\ Voltaire[0-9\\s,]*\\.?[0-9]*)",
+    "priority": 1,
+    "success_rate": 1.0,
+    "usage_count": 9,
+    "last_used": "2025-07-29T20:01:34.844973"
+  },
+  {
+    "field_name": "postal_code",
+    "pattern": "([0-9\\s,]+\\.?[0-9]*75011[0-9\\s,]*\\.?[0-9]*)",
+    "priority": 1,
+    "success_rate": 1.0,
+    "usage_count": 9,
+    "last_used": "2025-07-29T20:01:34.850984"
+  },
+  {
+    "field_name": "city",
+    "pattern": "ROUEN",
+    "priority": 2,
+    "success_rate": 1.0,
+    "usage_count": 9,
+    "last_used": "2025-07-29T20:04:06.730008"
+  },
+  {
+    "field_name": "address_line2",
+    "pattern": "Dans\\ votre\\ intérêt,\\ et\\ pour\\ vous\\ aider\\ à\\ faire\\ valoir\\ vos\\ droits,\\ conservez\\ cel\\ bulletin\\ dej\\ paie\\ sansl\\ limitation\\ de\\ durée\\.\\ Informations\\ complémentaires\\ www\\.service\\-public\\.fr\\\\n()",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 4,
+    "last_used": "2025-07-29T20:04:06.722702"
+  },
+  {
+    "field_name": "job_title",
+    "pattern": "MACON",
+    "priority": 1,
+    "success_rate": 1.0,
+    "usage_count": 3,
+    "last_used": "2025-07-29T20:05:13.329160"
+  },
+  {
+    "field_name": "base_salary",
+    "pattern": "2047,55",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 2,
+    "last_used": "2025-07-29T20:08:03.899695"
+  },
+  {
+    "field_name": "variable_pay",
+    "pattern": "292,44",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 2,
+    "last_used": "2025-07-29T20:08:03.902522"
+  },
+  {
+    "field_name": "taxable_net",
+    "pattern": "1512,43",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 1,
+    "last_used": "2025-07-29T20:11:22.723036"
+  },
+  {
+    "field_name": "employer_charges",
+    "pattern": "846,33",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 1,
+    "last_used": "2025-07-29T20:11:22.726389"
+  },
+  {
+    "field_name": "global_cost",
+    "pattern": "3050,53",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 1,
+    "last_used": "2025-07-29T20:11:22.729141"
+  },
+  {
+    "field_name": "total_paid",
+    "pattern": "2680,78",
+    "priority": 1,
+    "success_rate": 0.0,
+    "usage_count": 1,
+    "last_used": "2025-07-29T20:11:22.732017"
+  }
+]

@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 import pandas as pd
+from typing import Dict, List
 
 from advanced_extractor import AdvancedPayslipExtractor
 from learning_system import PayslipLearningSystem

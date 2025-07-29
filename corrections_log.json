@@ -1,0 +1,470 @@
+[
+  {
+    "timestamp": "2025-07-29T20:01:34.844973",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "RUE SANTOS DUMONT",
+    "corrected": "242 Boulevard Voltaire",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:01:34.850984",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "27930",
+    "corrected": "75011",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:01:34.852082",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "GUICHAINVILLE",
+    "corrected": "PARIS",
+    "confidence": 0.5,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.712764",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "RUE SANTOS DUMONT",
+    "corrected": "242 Boulevard Voltaire",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.715472",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "27930",
+    "corrected": "75011",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.716274",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "GUICHAINVILLE",
+    "corrected": "PARIS",
+    "confidence": 0.5,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.717107",
+    "field": "full_name",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "Abdelaziz LOUNIS\nStatut professionnel Ouvrier\nNiveau I",
+    "corrected": "Abdelaziz LOUNIS",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.719868",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "29 AVENUE DU MARECHAL FOCH",
+    "corrected": "1 Rue Stendhal",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.722702",
+    "field": "address_line2",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "APPT 29",
+    "corrected": "",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.725524",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "76100",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:04:06.730008",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "ROUEN",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.273878",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "RUE SANTOS DUMONT",
+    "corrected": "242 Boulevard Voltaire",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.283243",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "27930",
+    "corrected": "75011",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.286553",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "GUICHAINVILLE",
+    "corrected": "PARIS",
+    "confidence": 0.5,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.289141",
+    "field": "full_name",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "Abdelaziz LOUNIS\nStatut professionnel Ouvrier\nNiveau I",
+    "corrected": "Abdelaziz LOUNIS",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.295672",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "29 AVENUE DU MARECHAL FOCH",
+    "corrected": "1 Rue Stendhal",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.303673",
+    "field": "address_line2",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "APPT 29",
+    "corrected": "",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.319829",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "76100",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.325683",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "ROUEN",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.329160",
+    "field": "job_title",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "MACON",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:05:13.331821",
+    "field": "start_date",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "11/07/2023",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.853038",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "RUE SANTOS DUMONT",
+    "corrected": "242 Boulevard Voltaire",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.859131",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "27930",
+    "corrected": "75011",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.861509",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "GUICHAINVILLE",
+    "corrected": "PARIS",
+    "confidence": 0.5,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.864618",
+    "field": "full_name",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "Abdelaziz LOUNIS\nStatut professionnel Ouvrier\nNiveau I",
+    "corrected": "Abdelaziz LOUNIS",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.868333",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "29 AVENUE DU MARECHAL FOCH",
+    "corrected": "1 Rue Stendhal",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.877711",
+    "field": "address_line2",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "APPT 29",
+    "corrected": "",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.881244",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "76100",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.883448",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "ROUEN",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.885406",
+    "field": "job_title",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "MACON",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.887669",
+    "field": "start_date",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "11/07/2023",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.899695",
+    "field": "base_salary",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "169.00",
+    "corrected": "2047,55",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.902522",
+    "field": "variable_pay",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "10224.00",
+    "corrected": "292,44",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:08:03.915047",
+    "field": "gross_salary",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "834.45",
+    "corrected": "1834,45",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.661985",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "RUE SANTOS DUMONT",
+    "corrected": "242 Boulevard Voltaire",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.666558",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "27930",
+    "corrected": "75011",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.668405",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "GUICHAINVILLE",
+    "corrected": "PARIS",
+    "confidence": 0.5,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.670628",
+    "field": "full_name",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "Abdelaziz LOUNIS\nStatut professionnel Ouvrier\nNiveau I",
+    "corrected": "Abdelaziz LOUNIS",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.674008",
+    "field": "address_line1",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "29 AVENUE DU MARECHAL FOCH",
+    "corrected": "1 Rue Stendhal",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.680560",
+    "field": "address_line2",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "APPT 29",
+    "corrected": "",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.685689",
+    "field": "postal_code",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "76100",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.689522",
+    "field": "city",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "ROUEN",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.697367",
+    "field": "job_title",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "MACON",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.702124",
+    "field": "start_date",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "11/07/2023",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.710324",
+    "field": "base_salary",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "169.00",
+    "corrected": "2047,55",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.714990",
+    "field": "variable_pay",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "10224.00",
+    "corrected": "292,44",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.718325",
+    "field": "gross_salary",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "834.45",
+    "corrected": "1834,45",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.723036",
+    "field": "taxable_net",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "8242.60",
+    "corrected": "1512,43",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.726389",
+    "field": "employer_charges",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "6209.51",
+    "corrected": "846,33",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.729141",
+    "field": "global_cost",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "16433.51",
+    "corrected": "3050,53",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.732017",
+    "field": "total_paid",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "16433.51",
+    "corrected": "2680,78",
+    "confidence": 0.0,
+    "user_feedback": "Correction manuelle via interface web"
+  },
+  {
+    "timestamp": "2025-07-29T20:11:22.735591",
+    "field": "payment_date",
+    "pdf": "BP 11 2023 Originaux- ABDELAZIZ LOUNIS copie.pdf",
+    "original": "",
+    "corrected": "30/11/2023",
+    "confidence": 1.0,
+    "user_feedback": "Correction manuelle via interface web"
+  }
+]
