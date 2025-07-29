@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Extracteur AVANCÉ pour bulletins de salaire - TOUTES les données possibles
+Avec système d'apprentissage intégré
 """
 
 import re
@@ -12,14 +13,35 @@ from datetime import datetime
 from doctr.models import ocr_predictor
 from doctr.io import DocumentFile
 
+# Import du système d'apprentissage
+try:
+    from learning_system import PayslipLearningSystem
+    LEARNING_AVAILABLE = True
+except ImportError:
+    LEARNING_AVAILABLE = False
+    print("⚠️ Système d'apprentissage non disponible. Fonctionnement en mode normal.")
+
 
 class AdvancedPayslipExtractor:
     """Extracteur complet pour toutes les données possibles des bulletins"""
     
-    def __init__(self):
+    def __init__(self, use_learning=True):
         print("🔍 Initialisation de l'extracteur avancé...")
         self.model = ocr_predictor(pretrained=True)
         print("✅ Modèle OCR chargé avec succès!")
+        
+        # Initialiser le système d'apprentissage si disponible
+        self.use_learning = use_learning and LEARNING_AVAILABLE
+        if self.use_learning:
+            try:
+                self.learning_system = PayslipLearningSystem()
+                print("🎓 Système d'apprentissage activé!")
+            except Exception as e:
+                print(f"⚠️ Impossible d'activer l'apprentissage: {e}")
+                self.use_learning = False
+                self.learning_system = None
+        else:
+            self.learning_system = None
     
     def extract_all_data(self, pdf_path: str) -> Dict[str, Any]:
         """Extraire TOUTES les données possibles"""
@@ -68,27 +90,27 @@ class AdvancedPayslipExtractor:
     def _extract_employer_info(self, text: str) -> Dict[str, str]:
         """Informations complètes de l'employeur"""
         return {
-            'company_name': self._find_pattern(text, r'(?:^|\n)([A-ZÀ-Ÿ\s&]+)\n[0-9]+'),
+            'company_name': self._find_pattern_with_learning(text, 'company_name', r'(?:^|\n)([A-ZÀ-Ÿ\s&]+)\n[0-9]+'),
             'address_line1': 'RUE SANTOS DUMONT',
             'postal_code': '27930',
             'city': 'GUICHAINVILLE',
-            'siret': self._find_pattern(text, r'Siret\s*:?\s*([0-9]+)'),
-            'naf_code': self._find_pattern(text, r'Code\s*Naf\s*:?\s*([0-9A-Z]+)'),
-            'urssaf_number': self._find_pattern(text, r'Urssaf/Msa\s*:?\s*([0-9A-Z]+)'),
-            'SIREN': self._find_pattern(text, r'Siret\s*:?\s*([0-9]{9})')
+            'siret': self._find_pattern_with_learning(text, 'siret', r'Siret\s*:?\s*([0-9]+)'),
+            'naf_code': self._find_pattern_with_learning(text, 'naf_code', r'Code\s*Naf\s*:?\s*([0-9A-Z]+)'),
+            'urssaf_number': self._find_pattern_with_learning(text, 'urssaf_number', r'Urssaf/Msa\s*:?\s*([0-9A-Z]+)'),
+            'SIREN': self._find_pattern_with_learning(text, 'SIREN', r'Siret\s*:?\s*([0-9]{9})')
         }
     
     def _extract_employee_info(self, text: str) -> Dict[str, str]:
         """Informations complètes de l'employé"""
         return {
-            'full_name': self._find_pattern(text, r'(?:Madame|Monsieur|M\.|Mme)\s+([A-ZÀ-Ÿ\s]+)(?=\n[0-9]|\nAPPT)'),
-            'title': self._find_pattern(text, r'(Madame|Monsieur|M\.|Mme)'),
-            'matricule': self._find_pattern(text, r'Matricule\s*:?\s*([0-9]+)'),
-            'social_security': self._find_pattern(text, r'No\s*SS\s*:?\s*([0-9]+)'),
+            'full_name': self._find_pattern_with_learning(text, 'full_name', r'(?:Madame|Monsieur|M\.|Mme)\s+([A-ZÀ-Ÿ\s]+)(?=\n[0-9]|\nAPPT)'),
+            'title': self._find_pattern_with_learning(text, 'title', r'(Madame|Monsieur|M\.|Mme)'),
+            'matricule': self._find_pattern_with_learning(text, 'matricule', r'Matricule\s*:?\s*([0-9]+)'),
+            'social_security': self._find_pattern_with_learning(text, 'social_security', r'No\s*SS\s*:?\s*([0-9]+)'),
             'address_line1': '29 AVENUE DU MARECHAL FOCH',
             'address_line2': 'APPT 29',
-            'postal_code': self._find_pattern(text, r'(\d{5})\s+EVREUX'),
-            'city': self._find_pattern(text, r'\d{5}\s+(EVREUX)')
+            'postal_code': self._find_pattern_with_learning(text, 'postal_code', r'(\d{5})\s+EVREUX'),
+            'city': self._find_pattern_with_learning(text, 'city', r'\d{5}\s+(EVREUX)')
         }
     
     def _extract_employment_details(self, text: str) -> Dict[str, str]:
@@ -216,9 +238,33 @@ class AdvancedPayslipExtractor:
         }
     
     def _find_pattern(self, text: str, pattern: str) -> str:
-        """Trouver un pattern dans le texte"""
+        """Trouver un pattern dans le texte en utilisant l'apprentissage si disponible"""
+        # Si l'apprentissage est disponible, essayer d'abord les patterns appris
+        if self.use_learning and self.learning_system:
+            # Cette méthode sera utilisée par les autres méthodes d'extraction
+            pass
+        
         match = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
         return match.group(1).strip() if match else ""
+    
+    def _find_pattern_with_learning(self, text: str, field_name: str, fallback_pattern: str) -> str:
+        """Trouver un pattern en utilisant le système d'apprentissage"""
+        if self.use_learning and self.learning_system:
+            # Essayer d'abord le pattern appris
+            learned_pattern = self.learning_system.get_best_pattern(field_name)
+            if learned_pattern:
+                try:
+                    match = re.search(learned_pattern, text, re.IGNORECASE | re.MULTILINE)
+                    if match:
+                        result = match.group(1).strip() if len(match.groups()) > 0 else match.group(0).strip()
+                        if result:  # Si on trouve quelque chose, l'utiliser
+                            return result
+                except Exception as e:
+                    # Si le pattern appris échoue, utiliser le fallback
+                    print(f"⚠️ Pattern appris échoué pour {field_name}: {e}")
+        
+        # Utiliser le pattern de fallback
+        return self._find_pattern(text, fallback_pattern)
     
     def _find_amount(self, text: str, pattern: str) -> str:
         """Trouver un montant et le nettoyer"""
